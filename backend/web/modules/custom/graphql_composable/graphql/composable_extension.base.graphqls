@@ -1,0 +1,25 @@
+type Mutation
+
+scalar Violation
+
+type Track {
+  id: Int!
+  title: String!
+  likes: Int
+  author: String
+}
+
+type TrackResponse implements Response {
+  errors: [Violation]
+  track: Track
+}
+
+interface Response {
+  errors: [Violation]
+}
+
+input TrackInput {
+  title: String!
+  likes: Int
+  author: String
+}

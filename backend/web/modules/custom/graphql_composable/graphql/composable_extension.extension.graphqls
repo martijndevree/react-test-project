@@ -1,0 +1,7 @@
+extend type Query {
+  track(id: Int!): Track
+}
+
+extend type Mutation {
+  createTrack(data: TrackInput): TrackResponse
+}

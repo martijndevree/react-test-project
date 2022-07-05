@@ -1,0 +1,9 @@
+name: GraphQL custom composable
+type: module
+description: 'Custom GraphQL schemas.'
+package: GraphQL
+core: 8.x
+dependencies:
+  - graphql:graphql
+  - node:node
+core_version_requirement: ^8 || ^9
